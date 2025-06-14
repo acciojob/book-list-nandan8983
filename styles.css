@@ -1,1 +1,85 @@
 /*  your css code here. If applicable */
+body {
+      background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+      font-family: 'Roboto', sans-serif;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 700px;
+      margin-top: 48px;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(30, 41, 59, 0.10);
+      padding: 36px 32px 32px 32px;
+      animation: fadeIn 0.8s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+    h1 {
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #3730a3;
+      margin-bottom: 28px;
+      text-align: center;
+    }
+    .form-label {
+      font-weight: 500;
+      color: #4b5563;
+    }
+    .form-control {
+      border-radius: 8px;
+      border: 1.5px solid #c7d2fe;
+      transition: border-color 0.2s;
+    }
+    .form-control:focus {
+      border-color: #6366f1;
+      box-shadow: 0 0 0 0.15rem rgba(99,102,241,.15);
+    }
+    #submit {
+      background: linear-gradient(90deg, #6366f1 60%, #818cf8 100%);
+      border: none;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background 0.2s;
+    }
+    #submit:hover {
+      background: linear-gradient(90deg, #4f46e5 60%, #6366f1 100%);
+    }
+    .table {
+      margin-top: 32px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #f3f4f6;
+    }
+    .table thead {
+      background: #6366f1;
+      color: #fff;
+      font-weight: 600;
+    }
+    .table-striped>tbody>tr:nth-of-type(odd) {
+      background: #e0e7ff;
+    }
+    .table-striped>tbody>tr:nth-of-type(even) {
+      background: #f8fafc;
+    }
+    .delete {
+      background: #ef4444;
+      border: none;
+      color: #fff;
+      border-radius: 6px;
+      padding: 4px 14px;
+      font-size: 1rem;
+      transition: background 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .delete:hover {
+      background: #b91c1c;
+    }
+    @media (max-width: 800px) {
+      .container { padding: 18px 6px; }
+      h1 { font-size: 1.6rem; }
+    }
